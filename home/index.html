@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!-- Defining character set used in page -->
+        <meta charset="UTF-8"/>
+
+        <title> By The Button: Home </title>
+
+        <!-- General Meta Tags -->
+        <meta name="description" content=" INSERT DESCRIPTION OF PAGE IN HERE "/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no, user-scalable=no"/>
+        <meta name="theme-color" content="#ffffff"/>
+
+        <!-- Facebook OG Meta Tags-->
+        <meta propert="og:title" content=" INSERT TITLE OF THE PAGE IN HERE "/>
+        <meta propert="og:site_name" content="By The Button"/>
+        <meta propert="og:description" content=" INSERT DESCRIPTION OF THE PAGE IN HERE"/>
+        <meta propert="og:image" content=" INSERT PREFERRED IMAGE TO BE SHOWN HERE (WHEN PEOPLE SHARE THE PAGE ON FB) "/>
+        <meta propert="og:type" content="website"/>
+        <meta propert="og:url" content=" INSERT PAGE URL HERE (ONLY THING VISIBLE WOULD BE THE DOMAIN) "/>
+
+        <!-- Icons -->
+        <link rel="apple-touch-icon" sizes="180x180" href=" INSERT PATH TO APPLE TOUCH ICON HERE.PNG ">
+        <link class="favIconBig" rel="icon" type="image/png" sizes="32x32" href=" INSERT PATH TO FAVICON HERE.PNG ">
+        <link class="favIconSmall" rel="icon" type="image/png" sizes="16x16" href=" INSERT PATH TO FAVICON HERE.PNG ">
+        <link rel="mask-icon" href=" INSERT PATH TO SAFARI ICON HERE.SVG " color=" #INSERT COLOR WHEN MOUSE HOVERS HERE ">
+
+        <!-- External Files -->
+        <link rel="stylesheet" href="../styles/styles-mobile.css"/>
+        <link rel="stylesheet" href="../styles/styles-desktop.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            <ul class="menu">
+                <li class="item" id="logo"><a href="../home/index.html"><img src="../resources/logo.png"></img></a></li>
+                <li class="item"><a href="../home/index.html"> HOME </a></li>
+                <li class="item"><a href="../products/products.html"> PRODUCTS </a></li>
+                <li class="item"><a href="../stories/stories.html"> STORIES </a></li>
+                <li class="item"><a href="../contact/contact.html"> CONTACT </a></li>
+                <li id="space"></li>
+                <li class="item.button"><img src="../resources/cart.png"></img></li>
+                <li class="item.button"><img src="../resources/profile.png"></img></li>
+                <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+            </ul>
+        </nav>
+
+        <main class="home">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <h1> BY THE BUTTON </h1>
+                    <h2> find your next favorite. </h2>
+                    <p id="p1"> 
+                        Bringing to you a favorite of all and everyone:
+                        the button down, from prints of flowers and
+                        strips to basic whites and blacks — 
+                        we have everything here for you.
+                    </p>
+                    <p id="p2">
+                        Whatever your taste is, there is button-down for you.
+                    </p>                    
+                    <p id="p3">
+                        Start on your journey.<br>
+                        Start by the button. 
+                    </p>
+                    <a href="../home/index.html#filter-text" id="b1"> Let us find your match </a>
+                    <a href="../products/products.html" id="b2"> View our shirts </a>
+                </div>
+                <div class="intro-pic">
+                    <picture>
+                        <source srcset="../resources/intro-1.jpg" media="(min-width: 650px)"/>
+                        <source srcset="../resources/intro-2.jpg"/>
+                        <img src="../resources/intro-pic.png" alt="Introductory Image"></img>
+                    </picture>
+                </div>
+            </div>
+            <div class="tag">
+                <p id="est"> MANILA, PH. 2020 </p>
+            </div>
+            <div class="filter-container">
+                <div id="filter-text">
+                </div>
+                <div id="filter-pic">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p> Lovingly crafted • By the Button • 2020 Baterna & Zamora </p>
+            <a href="../others/privacy-policy.html" id="policy"> PRIVACY POLICY </a>
+        </footer>
+
+        <script src="../script/script.js">
+        </script>
+    </body>
+</html>
