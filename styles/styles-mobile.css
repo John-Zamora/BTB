@@ -412,6 +412,127 @@ main.products .products-cards {
 /* Product Main Styles End */
 
 
+/* Stories Main Styles Start */
+main.stories {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh 4rem 100vh 100vh;
+}
+
+main.stories .stories-intro {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+.stories-intro h2 {
+    grid-column: 1 / 13;
+    grid-row: 2 / 5;
+    
+    margin: 0rem 1rem;
+    font-size: 15vw;
+    color: var(--color-five);
+}
+.stories-intro p {
+    grid-column: 1 / 11;
+    grid-row: 7 / 12;
+    
+    margin: -2rem 1.5rem;
+    font-size: 6vw;
+    color: var(--color-one);
+}
+.stories-intro img {
+    grid-column: 1 / 13;
+    grid-row: 1 / 13;
+    
+    max-width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+main.stories .stories-tag {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    
+    background-color: var(--color-one);
+    color: var(--color-three);
+    font-size: 3vw;
+    text-align: center;
+}
+
+main.stories .stories-content {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+.stories-content #fair-pay{
+    grid-column: 1 / 13;
+    grid-row: 2 / 7;
+}
+.stories-content #sustained {
+    grid-column: 1 / 13;
+    grid-row: 7 / 12;
+}
+.stories-content h3 {
+    font-size: 6vw;
+    text-align: left;
+    background-color: var(--color-three);
+    width: 90%;
+    padding-left: 1rem;
+}
+.stories-content p {
+    font-size: 4vw;
+    text-align: justify;
+    padding: 0rem 2rem;
+}
+
+main.stories .stories-profiles {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+.stories-profiles #john {
+    grid-column: 1 / 13;
+    grid-row: 1 / 6;
+    
+    margin-top: 0.5rem;
+}
+.stories-profiles #polly {
+    grid-column: 1 / 13;
+    grid-row: 6 / 12;
+    
+    margin-top: 2rem;
+}
+.stories-profiles img {
+    display: block;
+    margin: auto;
+    max-width: 50%;
+    height: auto;
+}
+.stories-profiles h3 {
+    display: block;
+    margin: auto;
+    margin-top: 0.5rem;
+    width: 60%;
+    font-size: 6vw;
+    text-align: center;
+    background-color: var(--color-three);
+}
+.stories-profiles p {
+    font-size: 4vw;
+    text-align: center;
+}
+/* Stories Main Styles End */
+
+
 /* Privacy Policy Main Styles Start */
 main.privacy-policy {
     padding: 1.5rem;
