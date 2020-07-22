@@ -121,11 +121,11 @@ main.home .intro-content {
     font-size: 20vw;
     color: var(--color-five);
 }
-.intro-content h2 {
+.intro-content h3 {
     grid-column: 1 / 13;
     grid-row: 10 / 12;
     
-    font-size: 7vw;
+    font-size: 6vw;
     text-align: end;
     color: var(--color-one);
     z-index: 3;
@@ -136,7 +136,7 @@ main.home .intro-content {
     
     margin: 1rem;
     width: 80%;
-    font-size: 5vw;
+    font-size: 4vw;
     text-align: justify;
 
 }
@@ -146,7 +146,7 @@ main.home .intro-content {
     
     margin: 1rem;
     width: 70%;
-    font-size: 5vw;
+    font-size: 4vw;
     text-align: justify;
 }
 .intro-content #p3 {
@@ -154,7 +154,7 @@ main.home .intro-content {
     grid-row: 18 / 20;
     
     margin: 1rem;
-    font-size: 5vw;
+    font-size: 4vw;
     text-align: start;
 }
 .intro-content #b1 {
@@ -260,6 +260,7 @@ main.home .filter-card {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
     grid-template-rows: auto;
+    grid-gap: 1rem;
 }
 .filter-card img {
     max-width: 100%;
@@ -268,8 +269,147 @@ main.home .filter-card {
 .filter-card p {
     text-align: center;
 }
-
 /* Home Main Styles End */
+
+
+/* Product Main Styles Start */
+main.products {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 100vh 4rem 100vh auto;
+}
+
+main.products .products-intro {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+.products-intro h2 {
+    grid-column: 1 / 13;
+    grid-row: 2 / 5;
+    
+    margin: 1rem;
+    font-size: 15vw;
+    color: var(--color-five);
+}
+.products-intro p {
+    grid-column: 1 / 11;
+    grid-row: 7 / 12;
+    
+    margin: 1rem 1.5rem;
+    font-size: 7.5vw;
+    color: var(--color-one);
+}
+.products-intro img {
+    grid-column: 1 / 13;
+    grid-row: 1 / 13;
+    
+    z-index: -1;
+    height: auto;
+    max-width: 100%;
+}
+
+main.products .products-tag {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    
+    background-color: var(--color-one);
+    color: var(--color-three);
+    font-size: 2vw;
+    text-align: center;
+}
+
+main.products .products-filter {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr) ;
+}
+.products-filter p {
+    font-size: 5vw;
+    text-align: center;
+}
+.products-filter a {
+    font-size: 3vw;
+    text-decoration: none;
+    color: var(--color-two);
+}
+.products-filter a:hover {
+    color: var(--color-three);
+}
+.products-filter input {
+    grid-column: 2 / 12;
+    grid-row: 2 / 3;
+    
+    height: 6vh;
+    border-radius: 0.25rem;
+    border-color: var(--color-three);
+    border-width: 0.125rem;
+}
+.products-filter #sort {
+    grid-column: 1 / 13;
+    grid-row: 3 / 5;
+    
+    text-align: center;
+}
+.products-filter #type {
+    grid-column: 1 / 13;
+    grid-row: 5 / 7;
+
+    margin-top : 2rem;
+    text-align: center;
+
+}
+.products-filter #color {
+    grid-column: 1 / 13;
+    grid-row: 7 / 9;
+    
+    margin: 4rem;
+    text-align: center;
+}
+.products-filter #availability {
+    grid-column: 1 / 13;
+    grid-row: 9 / 11;
+    
+    margin-top: 2rem;
+    text-align: center;
+}
+
+main.products .products-cards {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    grid-template-rows: auto;
+    grid-column-gap: 1rem;
+    
+    padding: 1rem;
+}
+.products-cards .card {
+    margin-bottom: 2rem;
+}
+.products-cards img {
+    max-width: 100%;
+    height: auto;
+}
+.products-cards #line-1 {
+    font-size: 5vw;
+}
+.products-cards #line-2 {
+    font-size: 5vw;
+    color: var(--color-three);
+    margin: -1rem 0rem;
+}
+.products-cards #line-3 {
+    font-size: 5vw;
+}
+/* Product Main Styles End */
 
 
 /* Privacy Policy Main Styles Start */
@@ -279,8 +419,8 @@ main.privacy-policy {
 }
 
 main.privacy-policy #hook {
-    font-size: 80%;
-    padding: 5%;
+    font-size: 1vw;
+    padding: 1vw;
     color: var(--color-three);
     
     text-decoration: none;
@@ -315,7 +455,7 @@ footer a {
     font-size: 60%;
 }
 footer a:hover {
-    background: -webkit-linear-gradient(var(--color-two), var(--color-three));
+    background: -webkit-linear-gradient(var(--color-three), var(--color-five));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
