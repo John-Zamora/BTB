@@ -1,20 +1,14 @@
-// Nav Script Start //
-/*
-const toggle = document.querySelector(".toggle");
-const menu = document.querySelector(".menu");
+// Sidebar Script Start //
 
-function toggleMenu() {
-    if(menu.classList.contains("active")) {
-        menu.classList.remove("active");
+function login() {
+    var sidebar = document.getElementById('sidebar');
 
-        toggle.querySelector("a").innerHTML = "<i class=’fas fa-bars’></i>";
+    if (sidebar.style.opacity === "0") {
+        sidebar.style.opacity = "1";
     }
-    else {
-        menu.classList.add("active");
 
-        toggle.querySelector("a").innerHTML = "<i class=’fas fa-times’></i>";
+    else{
+        sidebar.style.opacity = "0";
     }
 }
-
-toggle.addEventListener("click", toggleMenu, false);
-// Nav Script End //
+// Sidebar Script End //

@@ -38,7 +38,7 @@
                 <li class="item"><a href="../contact/contact.html"> CONTACT </a></li>
                 <li id="space"></li>
                 <li class="item"><a href="../cart/cart.html"> CART </a></li>
-                <li class="item"><a href="#"> LOGIN </a></li>
+                <li class="item" onclick="login()"><a href="#"> LOGIN </a></li>
             </ul>
         </nav>
 
@@ -95,6 +95,23 @@
                     </p>
                 </div>
             </div>
+            <div id="sidebar">
+                <div class="content">
+                    <p id="button" onclick="login()"> X </p>
+                    <p id="line-1"> Welcome Back! </p>
+                    <p id="line-2"> Hop back in! </p>
+                    <p id="email"> Email </p>
+                    <input id="input-1"></input>
+                    <p id="password"> Password </p>
+                    <input id="input-2"></input>
+                    <a href="#" id="forgot"> Forgot your password? Click here. </a>
+                    <a href="#" id="login-button"> LOG IN </a>
+                    <p id="line-3"> New here? We'll show you around! </p>
+                    <p id="email-2"> Email </p>
+                    <input id="input-3"></input>
+                    <a href="#" id="signup-button"> SIGN UP </a>
+                </div>
+            </div>
         </main>
 
         <footer>
@@ -102,7 +119,7 @@
             <a href="../others/privacy-policy.html" id="policy"> PRIVACY POLICY </a>
         </footer>
 
-        <script>
+        <script src="../script/script.js">
         </script>
     </body>
 </html>
