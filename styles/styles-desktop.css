@@ -403,6 +403,7 @@
         grid-column: 2 / 3;
         grid-row: 3 / 4;
     
+        margin-top: 3vh;
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
         grid-template-rows: auto;

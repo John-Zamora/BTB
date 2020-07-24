@@ -292,7 +292,7 @@ main.home .filter-card {
     z-index: 5;
     width: 100vw;
     background-color: var(--color-one);
-    height: 100vh;
+    height: 120vh;
 }
 #sidebar #button {
     margin: 1rem;
